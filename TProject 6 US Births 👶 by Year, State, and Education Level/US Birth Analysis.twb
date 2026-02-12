@@ -1,0 +1,1798 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='win' version='18.1' xml:base='https://localhost' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/USBirthAnalysis_17190826742370?rev=1.1' id='USBirthAnalysis_17190826742370' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='us_births_2016_2021 (us_births_2016_2021E)' inline='true' name='federated.16h3lq60ecoyut12ywsgj0ydrd1b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='us_births_2016_2021E' name='excel-direct.1dzmllx03w5xhq1bfxezs0qzbld1'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1dzmllx03w5xhq1bfxezs0qzbld1' name='us_births_2016_2021' table='[us_births_2016_2021$]' type='table'>
+          <columns gridOrigin='A1:I5497:no:A1:I5497:0' header='yes' outcome='6'>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='string' name='State Abbreviation' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='string' name='Education Level of Mother' ordinal='4' />
+            <column datatype='integer' name='Education Level Code' ordinal='5' />
+            <column datatype='integer' name='Number of Births' ordinal='6' />
+            <column datatype='real' name='Average Age of Mother (years)' ordinal='7' />
+            <column datatype='real' name='Average Birth Weight (g)' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[us_births_2016_2021]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I5497:no:A1:I5497:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[us_births_2016_2021]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State Abbreviation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State Abbreviation]</local-name>
+            <parent-name>[us_births_2016_2021]</parent-name>
+            <remote-alias>State Abbreviation</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[us_births_2016_2021]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[us_births_2016_2021]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education Level of Mother</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Education Level of Mother]</local-name>
+            <parent-name>[us_births_2016_2021]</parent-name>
+            <remote-alias>Education Level of Mother</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education Level Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Education Level Code]</local-name>
+            <parent-name>[us_births_2016_2021]</parent-name>
+            <remote-alias>Education Level Code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Births</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Births]</local-name>
+            <parent-name>[us_births_2016_2021]</parent-name>
+            <remote-alias>Number of Births</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Age of Mother (years)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Age of Mother (years)]</local-name>
+            <parent-name>[us_births_2016_2021]</parent-name>
+            <remote-alias>Average Age of Mother (years)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Birth Weight (g)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Birth Weight (g)]</local-name>
+            <parent-name>[us_births_2016_2021]</parent-name>
+            <remote-alias>Average Birth Weight (g)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Education Level of Mother]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State Abbreviation]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='us_births_2016_2021' datatype='table' name='[__tableau_internal_object_id__].[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]' role='measure' type='quantitative' />
+      <column-instance column='[Education Level of Mother]' derivation='None' name='[none:Education Level of Mother:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Lenovo/Desktop/Github Projects/TProject 6 US Births 👶 by Year, State, and Education Level/US Birth Analysis.twb Files/Data/TableauTemp/#TableauTemp_1ei69qv1r5jdwh186nrsx0mhr4yk.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/22/2024 06:07:13 PM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>0</ordinal>
+              <family>us_births_2016_2021</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State Abbreviation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State Abbreviation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State Abbreviation</remote-alias>
+              <ordinal>1</ordinal>
+              <family>us_births_2016_2021</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>us_births_2016_2021</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>3</ordinal>
+              <family>us_births_2016_2021</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education Level of Mother</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Education Level of Mother]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education Level of Mother</remote-alias>
+              <ordinal>4</ordinal>
+              <family>us_births_2016_2021</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education Level Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Education Level Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education Level Code</remote-alias>
+              <ordinal>5</ordinal>
+              <family>us_births_2016_2021</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Births</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Births]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Births</remote-alias>
+              <ordinal>6</ordinal>
+              <family>us_births_2016_2021</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2326</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average Age of Mother (years)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Average Age of Mother (years)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average Age of Mother (years)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>us_births_2016_2021</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average Birth Weight (g)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Average Birth Weight (g)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average Birth Weight (g)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>us_births_2016_2021</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2159</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Education Level of Mother:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Unknown or Not Stated&quot;</bucket>
+            </map>
+            <map to='#396794'>
+              <bucket>&quot;Some college credit, but not a degree&quot;</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>&quot;Master&apos;s degree (MA, MS, MEng, MEd, MSW, MBA)&quot;</bucket>
+            </map>
+            <map to='#5586b3'>
+              <bucket>&quot;High school graduate or GED completed&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;Doctorate (PhD, EdD) or Professional Degree (MD, DDS, DVM, LLB, JD)&quot;</bucket>
+            </map>
+            <map to='#78a9ce'>
+              <bucket>&quot;Bachelor&apos;s degree (BA, AB, BS)&quot;</bucket>
+            </map>
+            <map to='#8bbadc'>
+              <bucket>&quot;Associate degree (AA, AS)&quot;</bucket>
+            </map>
+            <map to='#a1cce7'>
+              <bucket>&quot;9th through 12th grade with no diploma&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;8th grade or less&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:State:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;District of Columbia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nevada&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;West Virginia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alabama&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Maryland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;South Carolina&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mississippi&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Utah&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Idaho&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Florida&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;New Hampshire&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Wisconsin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Colorado&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Missouri&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Vermont&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Louisiana&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Pennsylvania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alaska&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;South Dakota&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kansas&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Connecticut&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Montana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Virginia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Illinois&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;North Carolina&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Indiana&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;North Dakota&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kentucky&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Oregon&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Maine&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Rhode Island&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;New Jersey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wyoming&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Delaware&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nebraska&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Arizona&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Michigan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tennessee&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Iowa&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ohio&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hawaii&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;New Mexico&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Arkansas&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Minnesota&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Texas&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='us_births_2016_2021' id='us!births!2016!2021_B5613654DF7B4565A651FCC8409D7D62'>
+            <properties context=''>
+              <relation connection='excel-direct.1dzmllx03w5xhq1bfxezs0qzbld1' name='us_births_2016_2021' table='[us_births_2016_2021$]' type='table'>
+                <columns gridOrigin='A1:I5497:no:A1:I5497:0' header='yes' outcome='6'>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='string' name='State Abbreviation' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='string' name='Gender' ordinal='3' />
+                  <column datatype='string' name='Education Level of Mother' ordinal='4' />
+                  <column datatype='integer' name='Education Level Code' ordinal='5' />
+                  <column datatype='integer' name='Number of Births' ordinal='6' />
+                  <column datatype='real' name='Average Age of Mother (years)' ordinal='7' />
+                  <column datatype='real' name='Average Birth Weight (g)' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.16h3lq60ecoyut12ywsgj0ydrd1b'>
+      <datasources>
+        <datasource caption='us_births_2016_2021 (us_births_2016_2021E)' name='federated.16h3lq60ecoyut12ywsgj0ydrd1b' />
+      </datasources>
+      <datasource-dependencies datasource='federated.16h3lq60ecoyut12ywsgj0ydrd1b'>
+        <column datatype='string' name='[Education Level of Mother]' role='dimension' type='nominal' />
+        <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[Education Level of Mother]' derivation='None' name='[none:Education Level of Mother:nk]' pivot='key' type='nominal' />
+        <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]'>
+        <groupfilter function='level-members' level='[none:Education Level of Mother:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]'>
+        <groupfilter function='level-members' level='[none:State:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='KPIs'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/USBirthAnalysis_17190826742370/KPIs?rev=' id='102466361' path='/workbooks/USBirthAnalysis_17190826742370' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us_births_2016_2021 (us_births_2016_2021E)' name='federated.16h3lq60ecoyut12ywsgj0ydrd1b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16h3lq60ecoyut12ywsgj0ydrd1b'>
+            <column datatype='real' name='[Average Age of Mother (years)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Average Birth Weight (g)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Education Level of Mother]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Births]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Average Age of Mother (years)]' derivation='Avg' name='[avg:Average Age of Mother (years):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Average Birth Weight (g)]' derivation='Avg' name='[avg:Average Birth Weight (g):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='CountD' name='[ctd:State:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Education Level of Mother]' derivation='None' name='[none:Education Level of Mother:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Births]' derivation='Sum' name='[sum:Number of Births:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[avg:Average Age of Mother (years):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[avg:Average Birth Weight (g):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[ctd:State:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[sum:Number of Births:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[:Measure Names]</column>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]</column>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{DCBC52B9-607B-4C72-8CFD-3D63B1715FE4}' />
+    </worksheet>
+    <worksheet name='No of Birth by Education Level of Mother'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/USBirthAnalysis_17190826742370/NoofBirthbyEducationLevelofMother?rev=' id='102466358' path='/workbooks/USBirthAnalysis_17190826742370' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us_births_2016_2021 (us_births_2016_2021E)' name='federated.16h3lq60ecoyut12ywsgj0ydrd1b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16h3lq60ecoyut12ywsgj0ydrd1b'>
+            <column datatype='string' name='[Education Level of Mother]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Births]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Number of Births]' derivation='CountD' name='[ctd:Number of Births:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Education Level of Mother]' derivation='None' name='[none:Education Level of Mother:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Births]' derivation='Sum' name='[sum:Number of Births:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]</column>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[ctd:Number of Births:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]' value='Education Level of Mother'>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Education Level of Mother</run>
+              </formatted-text>
+            </format>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]' />
+              <text column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[sum:Number of Births:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[ctd:Number of Births:qk]</rows>
+        <cols>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]</cols>
+      </table>
+      <simple-id uuid='{4EC6845D-3D17-4CBE-A3A4-1B3DAED89E2F}' />
+    </worksheet>
+    <worksheet name='No of Birth by Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/USBirthAnalysis_17190826742370/NoofBirthbyGender?rev=' id='102466357' path='/workbooks/USBirthAnalysis_17190826742370' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us_births_2016_2021 (us_births_2016_2021E)' name='federated.16h3lq60ecoyut12ywsgj0ydrd1b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16h3lq60ecoyut12ywsgj0ydrd1b'>
+            <column datatype='string' name='[Education Level of Mother]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Births]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Number of Births]' derivation='Count' name='[cnt:Number of Births:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Education Level of Mother]' derivation='None' name='[none:Education Level of Mother:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]</column>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[cnt:Number of Births:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Gender:nk]' />
+              <text column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[cnt:Number of Births:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[cnt:Number of Births:qk]</rows>
+        <cols>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Gender:nk]</cols>
+      </table>
+      <simple-id uuid='{15F7F1BF-6D0A-400D-BF25-D538EFACA49D}' />
+    </worksheet>
+    <worksheet name='No of birth by States'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/USBirthAnalysis_17190826742370/NoofbirthbyStates?rev=' id='102466360' path='/workbooks/USBirthAnalysis_17190826742370' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us_births_2016_2021 (us_births_2016_2021E)' name='federated.16h3lq60ecoyut12ywsgj0ydrd1b' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.16h3lq60ecoyut12ywsgj0ydrd1b'>
+            <column datatype='string' name='[Education Level of Mother]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Births]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Education Level of Mother]' derivation='None' name='[none:Education Level of Mother:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Births]' derivation='Sum' name='[sum:Number of Births:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]</column>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[Longitude (generated)]' field-type='quantitative' max='33662227.973719113' min='26044304.187403265' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[Latitude (generated)]' field-type='quantitative' max='7391855.2460839469' min='2890990.268323929' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='light' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]' value='State'>
+              <formatted-text>
+                <run bold='true'>State</run>
+              </formatted-text>
+            </format>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]' />
+              <text column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]' />
+              <text column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[sum:Number of Births:qk]' />
+              <geometry column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+                <format attr='has-halo' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[Latitude (generated)]</rows>
+        <cols>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{800DA3F8-755E-4CBD-8EC4-CED3A3255902}' />
+    </worksheet>
+    <worksheet name='No of birth by Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/USBirthAnalysis_17190826742370/NoofbirthbyYear?rev=' id='102466359' path='/workbooks/USBirthAnalysis_17190826742370' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us_births_2016_2021 (us_births_2016_2021E)' name='federated.16h3lq60ecoyut12ywsgj0ydrd1b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16h3lq60ecoyut12ywsgj0ydrd1b'>
+            <column datatype='string' name='[Education Level of Mother]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Births]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Education Level of Mother]' derivation='None' name='[none:Education Level of Mother:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Births]' derivation='Sum' name='[sum:Number of Births:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Year:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]</column>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]</column>
+            <column>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[sum:Number of Births:qk]' />
+              <text column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[sum:Number of Births:qk]' />
+              <text column='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F762AFE7-9525-4BF8-AC86-1B3D3B98A430}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='US Birth 2016 - 2021 Analysis '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/USBirthAnalysis_17190826742370/USBirth2016-2021Analysis?rev=' id='102466362' path='/workbooks/USBirthAnalysis_17190826742370' revision='' />
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='us_births_2016_2021 (us_births_2016_2021E)' name='federated.16h3lq60ecoyut12ywsgj0ydrd1b' />
+      </datasources>
+      <datasource-dependencies datasource='federated.16h3lq60ecoyut12ywsgj0ydrd1b'>
+        <column datatype='string' name='[Education Level of Mother]' role='dimension' type='nominal' />
+        <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Education Level of Mother]' derivation='None' name='[none:Education Level of Mother:nk]' pivot='key' type='nominal' />
+        <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97856' id='5' param='vert' type-v2='layout-flow' w='99150' x='425' y='1072'>
+            <zone h='7774' id='7' type-v2='title' w='99150' x='425' y='1072'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#e7f1f5' />
+              </zone-style>
+            </zone>
+            <zone h='90082' id='6' type-v2='layout-basic' w='99150' x='425' y='8846'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='background-color' value='#e7f1f5' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='45355' id='8' name='No of birth by States' w='49252' x='810' y='53178' />
+        <zone h='12225' id='9' name='No of birth by States' pane-specification-id='0' param='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]' type-v2='color' w='8728' x='36284' y='85208' />
+        <zone h='41565' id='10' name='No of Birth by Gender' w='27618' x='1122' y='9169' />
+        <zone h='44866' id='13' name='No of birth by Year' w='29115' x='50810' y='53423' />
+        <zone h='41932' id='14' name='No of Birth by Education Level of Mother' w='44077' x='31047' y='9169' />
+        <zone h='41198' id='15' name='KPIs' w='23254' x='75873' y='9169' />
+        <zone h='4156' id='16' mode='checkdropdown' name='No of birth by States' param='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]' type-v2='filter' values='database' w='17588' x='77790' y='2200' />
+        <zone h='44866' id='17' mode='radiolist' name='No of Birth by Education Level of Mother' param='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]' type-v2='filter' values='database' w='17768' x='80923' y='53545' />
+        <zone h='4523' id='18' name='No of birth by Year' param='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Year:qk]' type-v2='filter' values='database' w='22569' x='49065' y='2200' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97856' id='25' param='vert' type-v2='layout-flow' w='99150' x='425' y='1072'>
+                <zone h='7774' id='7' type-v2='title' w='99150' x='425' y='1072'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e7f1f5' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41565' id='10' is-fixed='true' name='No of Birth by Gender' w='27618' x='1122' y='9169'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='44866' id='17' mode='dropdown' name='No of Birth by Education Level of Mother' param='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]' type-v2='filter' values='database' w='17768' x='80923' y='53545'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41932' id='14' is-fixed='true' name='No of Birth by Education Level of Mother' w='44077' x='31047' y='9169'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41198' id='15' is-fixed='true' name='KPIs' w='23254' x='75873' y='9169'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4156' id='16' mode='checkdropdown' name='No of birth by States' param='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]' type-v2='filter' values='database' w='17588' x='77790' y='2200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45355' id='8' is-fixed='true' name='No of birth by States' w='49252' x='810' y='53178'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12225' id='9' name='No of birth by States' pane-specification-id='0' param='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]' type-v2='color' w='8728' x='36284' y='85208'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4523' id='18' name='No of birth by Year' param='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Year:qk]' type-v2='filter' values='database' w='22569' x='49065' y='2200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44866' id='13' is-fixed='true' name='No of birth by Year' w='29115' x='50810' y='53423'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{73FFDBD1-DF1F-4BF1-87BD-387E6C8B7B29}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' show-side-pane='false' source-height='44'>
+    <window class='worksheet' name='No of Birth by Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DE262728-9286-4C24-B45C-419758F7CCF2}' />
+    </window>
+    <window class='worksheet' name='No of Birth by Education Level of Mother'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Education Level of Mother:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E7AA43BC-A16B-40C9-A535-50E1543BDC1A}' />
+    </window>
+    <window class='worksheet' name='No of birth by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{03FD9CAC-E57A-48CB-9ADF-214EF147B565}' />
+    </window>
+    <window class='worksheet' name='No of birth by States'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{4FE305C2-BF2A-4B56-8298-DA0ABA9E7B47}' />
+    </window>
+    <window class='worksheet' name='KPIs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{C5F2A682-E50B-402A-B015-64B5039A34B3}' />
+    </window>
+    <window class='dashboard' maximized='true' name='US Birth 2016 - 2021 Analysis '>
+      <viewpoints>
+        <viewpoint name='KPIs'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='No of Birth by Education Level of Mother'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='No of Birth by Gender'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='No of birth by States'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.16h3lq60ecoyut12ywsgj0ydrd1b].[none:State:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='No of birth by Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{04EDA9DC-3F75-4879-97BD-F623B1B6813D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='US Birth 2016 - 2021 Analysis ' width='192'>
+      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
+      lZWaS/8PVDjmE0KXpYUAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
